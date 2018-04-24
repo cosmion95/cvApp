@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#607D8B"/>
+
+    <View
+        android:id="@+id/bottom_view_background"
+        android:background="#455A64"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/skills"
+        app:civ_border_color="#757575"
+        app:civ_border_width="3dp" />
+
+
+    <TextView
+        android:id="@+id/skills"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Technical skills"
+        android:layout_below="@id/image"/>
+
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lang_title"
+        android:layout_below="@id/skills"
+        android:text="Languages:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/languages"
+        android:layout_below="@id/lang_title"
+        android:text="Java, XML, HTML, CSS, SQL, some knowledge of C/C++"/>
+
+    <TextView
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/os_title"
+        android:layout_below="@id/languages"
+        android:text="\nOperating systems:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/os"
+        android:layout_below="@id/os_title"
+        android:text="-Windows
+\n-some Linux knowledge"/>
+
+    <TextView
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ide_title"
+        android:layout_below="@id/os"
+        android:text="\nIDEs:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ide"
+        android:layout_below="@id/ide_title"
+        android:text="-IntelliJ IDEA
+\n-Android Studio
+\n-small amount of experience with Visual Studio"/>
+
+    <TextView
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spoken_langs_title"
+        android:layout_below="@id/ide"
+        android:text="\nSpoken languages:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spoken_langs"
+        android:layout_below="@id/spoken_langs_title"
+        android:text="-very good understanding of the English languange
+\n-Romanian"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firebase"
+        android:layout_below="@id/spoken_langs"
+        android:text="Currently I am learning how to integrate Firebase in my applications, trying to get a good grasp on JSON oriented databases."/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kotlin"
+        android:layout_below="@id/firebase"
+        android:text="As a starting developer in Android, I am interested in learning all the necesary skills needed to develop professional, reliable and fast applications."/>
+
+
+</RelativeLayout>

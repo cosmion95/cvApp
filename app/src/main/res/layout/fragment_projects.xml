@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#607D8B"/>
+
+    <View
+        android:id="@+id/bottom_view_background"
+        android:background="#455A64"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/github_logo3"
+        app:civ_border_color="#757575"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GitHub Projects"
+        android:layout_below="@id/logo"/>
+
+    <TextView
+        android:id="@+id/adress"
+        android:textColor="#B2EBF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text="https://github.com/cosmion95"
+        android:layout_centerHorizontal="true"/>
+
+    <!--<TextView-->
+        <!--android:textColor="#CFD8DC"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:id="@+id/project10"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Project name: ShopIT-->
+<!--\nShort description: Designed an app where the user can browse and order IT products.-->
+<!--They are also required to register an account and provide an email adress in order to buy something.-->
+<!--\nUsed tools and technologies: MySQLite, Adapter, Provider, AsyncTask"-->
+        <!--android:layout_below="@id/adress"/>-->
+    <!--<TextView-->
+        <!--android:textColor="#B2EBF2"-->
+        <!--android:id="@+id/project11"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_below="@id/project10"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Github link: https://github.com/cosmion95/ShopIT"/>-->
+
+    <!--<TextView-->
+        <!--android:textColor="#CFD8DC"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:id="@+id/project20"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Project name: NewsApp-->
+<!--\nShort description: Application which receives data about the most recent news from theguardian.com and displays them on the screen.-->
+<!--Received data includes the news title, category and the date.-->
+<!--\nUsed tools and technologies: Loader, Adapter, JSONs"-->
+        <!--android:layout_below="@id/project11"/>-->
+    <!--<TextView-->
+        <!--android:textColor="#B2EBF2"-->
+        <!--android:id="@+id/project21"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:layout_below="@id/project20"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Github link: https://github.com/cosmion95/NewsApp"/>-->
+
+    <!--<TextView-->
+        <!--android:textColor="#CFD8DC"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:id="@+id/project30"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Project name: Connect3-->
+<!--\nShort description: Designed a simple game like X0. 2 players are required.-->
+<!--Future plans include using Firebase so players can register an account and play against each other using different devices."-->
+        <!--android:layout_below="@id/project21"/>-->
+    <!--<TextView-->
+        <!--android:textColor="#B2EBF2"-->
+        <!--android:layout_below="@id/project30"-->
+        <!--android:id="@+id/project31"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="Github link: https://github.com/cosmion95/Connect3" />-->
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:paddingLeft="10dp"
+        android:id="@+id/project40"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project name: MagazinOnlineBasic
+\nShort description: This is an earlier project, it connects to a remote database and you can add/remove items from the shopping cart.
+It only has basic functionality and a basic interface because I have moved on to learning Android.
+\nUsed tools and technologies: IntelliJ IDEA, Tomcat, Maven, servlet"
+        android:layout_below="@id/adress"/>
+    <TextView
+        android:textColor="#B2EBF2"
+        android:layout_below="@id/project40"
+        android:id="@+id/project41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Github link: https://github.com/cosmion95/MagazinOnlineBasic" />
+
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_git"
+        android:layout_below="@id/project41"
+        android:text="There are some other repositories on Github, most of them are from are from the course I have been taking on learning Java and the online Android courses from Udacity."/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#607D8B"/>
+
+    <View
+        android:id="@+id/bottom_view_background"
+        android:background="#455A64"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/education"
+        app:civ_border_color="#757575"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:layout_below="@id/image"
+        android:id="@+id/education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Education"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edu1_title"
+        android:layout_below="@id/education"
+        android:text="FasttrackIT Cluj-Napoca:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edu1"
+        android:layout_below="@id/edu1_title"
+        android:paddingLeft="10dp"
+        android:text="-Java Programming Course: 2017 - 2018"/>
+
+    <TextView
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edu2_title"
+        android:layout_below="@id/edu1"
+        android:text="Petru-Maior University, Targu-Mures:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edu2"
+        android:layout_below="@id/edu2_title"
+        android:paddingLeft="10dp"
+        android:text="-Computer Science: 2016 - 2017
+\n-Engineering: Automation: 2014 - 2016"/>
+
+    <TextView
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edu3_title"
+        android:layout_below="@id/edu2"
+        android:text="Mihai Eminescu National College, Toplita, Harghita:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edu3"
+        android:layout_below="@id/edu3_title"
+        android:paddingLeft="10dp"
+        android:text="-Economy and accounting: 2010 - 2014"/>
+
+    <TextView
+        android:textColor="#B2EBF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/books_title"
+        android:paddingLeft="10dp"
+        android:text="\nStudied books:"
+        android:layout_below="@id/edu3"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/books"
+        android:layout_below="@id/books_title"
+        android:paddingLeft="10dp"
+        android:text="-Intro to Java Programming, Comprehensive Version (10th Edition), Y. Daniel Liang
+\n-Core Java(TM), Volume I--Fundamentals, Cay S. Horstmann
+\n-Head First Java, Kathy Sierra, Bert Bates"/>
+
+    <TextView
+        android:textColor="#B2EBF2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courses_title"
+        android:paddingLeft="10dp"
+        android:text="\nOnline courses for Android from Udacity:"
+        android:layout_below="@id/books"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courses"
+        android:layout_below="@id/courses_title"
+        android:paddingLeft="10dp"
+        android:text="-User Input course
+\n-Multiscreen Apps course
+\n-Networking course
+\n-Data Storage course
+\n-Firebase in a Weekend course(in progress)
+\n-UX Design for Mobile Developers course(in progress)"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/degree_title"
+        android:layout_below="@id/courses"
+        android:text="Degrees and diplomas:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/degree"
+        android:layout_below="@id/degree_title"
+        android:paddingLeft="10dp"
+        android:text="-Analyst Programmer
+\n-Technician in economical activities
+\n-Bacalaureat"/>
+
+    <!--<TextView-->
+        <!--android:textColor="#CFD8DC"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/edu2"-->
+        <!--android:layout_below="@id/edu1"-->
+        <!--android:text="Degrees and diplomas:-->
+<!--\nAnalyst Programmer: to be received-->
+<!--\nBacalaureat-->
+<!--\nTechnician in economical activities"/>-->
+
+</RelativeLayout>

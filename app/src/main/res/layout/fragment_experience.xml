@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/top_view_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#607D8B"/>
+
+    <View
+        android:id="@+id/bottom_view_background"
+        android:background="#455A64"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_view_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:src="@drawable/experience"
+        app:civ_border_color="#757575"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:layout_below="@id/image"
+        android:id="@+id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Work experience"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work1title"
+        android:layout_below="@id/experience"
+        android:text="Dona Impex SRL:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work1"
+        android:layout_below="@id/work1title"
+        android:paddingLeft="10dp"
+        android:text="-food delivery and catering: spring - autumn, 2017"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work2title"
+        android:layout_below="@id/work1"
+        android:text=" Flanco Retail SA:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work2"
+        android:layout_below="@id/work2title"
+        android:paddingLeft="10dp"
+        android:text="-salesman: summer, 2016"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work3title"
+        android:layout_below="@id/work2"
+        android:text=" Con Amore Pizza Shop:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work3"
+        android:layout_below="@id/work3title"
+        android:paddingLeft="10dp"
+        android:text="-chef helper: early summer, 2016"/>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:textColor="#B2EBF2"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work4title"
+        android:layout_below="@id/work3"
+        android:text="Kaufland Romania S.C.S.:"/>
+
+    <TextView
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/work4"
+        android:layout_below="@id/work4title"
+        android:paddingLeft="10dp"
+        android:text="-cashier: autumn 2015"/>
+
+    <TextView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:text="Additional information"
+        android:layout_below="@id/work4"/>
+
+    <TextView
+        android:layout_below="@id/ad"
+        android:textColor="#CFD8DC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad1"
+        android:paddingLeft="10dp"
+        android:text="-clean driving licence
+\n-Android enthusiast, managed to soft-brick my first Android phone 2 months after my parents bought it by installing custom ROMs, now my friends come to me for repairs
+\n-love Italian cuisine"/>
+
+
+</RelativeLayout>
